@@ -1,0 +1,108 @@
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .subtitle {
+    color: #777;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .sectionTitle {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .col {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imgWrapper {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .imgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .imgWrapper:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlayInfos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+  }
+  
+  .overlayInfos h5 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .overlayInfos a {
+    margin-right: 15px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .overlayInfos a:hover {
+    color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+    .col {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .col {
+      width: 100%;
+    }
+  }
+  
